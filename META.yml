@@ -20,8 +20,10 @@ no_index:
     - t
 requires:
   Date::Korean: 0
+  DateTime: 0
+  Try::Tiny: 0
   perl: 5.6.0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/JEEN/p5-Date-Holidays-KR.git
-version: 0.04
+version: 0.0401
