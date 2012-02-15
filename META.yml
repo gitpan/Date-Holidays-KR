@@ -1,7 +1,7 @@
 ---
 abstract: 'Determine Korean public holidays'
 author:
-  - 'Jeen Lee <aiatejin {at} gmail.com>'
+  - 'Jeen Lee <aiatejin {at} gmail.com>, Keedi Kim < keedi.kim {at} gmail.com>'
 build_requires:
   ExtUtils::MakeMaker: 6.62
 configure_requires:
@@ -24,4 +24,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/JEEN/p5-Date-Holidays-KR.git
-version: 0.03
+version: 0.04
