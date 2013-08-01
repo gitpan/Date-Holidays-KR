@@ -1,5 +1,7 @@
 use strict;
 use DateTime;
+BEGIN { $ENV{TZ} = 'Asia/Seoul' } 
+
 use Date::Holidays::KR;
 use Test::More tests => 24 * 3;
 

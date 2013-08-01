@@ -3,12 +3,13 @@ abstract: 'Determine Korean public holidays'
 author:
   - 'Jeen Lee <aiatejin {at} gmail.com>, Keedi Kim < keedi.kim {at} gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.62
+  Test::More: 0.98
 configure_requires:
-  ExtUtils::MakeMaker: 6.62
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,14 +17,28 @@ meta-spec:
 name: Date-Holidays-KR
 no_index:
   directory:
-    - inc
     - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Date::Holidays::KR:
+    file: lib/Date/Holidays/KR.pm
+    version: 0.05
 requires:
   Date::Korean: 0
   DateTime: 0
   Try::Tiny: 0
-  perl: 5.6.0
+  perl: 5.008001
 resources:
-  license: http://dev.perl.org/licenses/
+  bugtracker: https://github.com/JEEN/p5-Date-Holidays-KR/issues
+  homepage: https://github.com/JEEN/p5-Date-Holidays-KR
   repository: git://github.com/JEEN/p5-Date-Holidays-KR.git
-version: 0.0402
+version: 0.05
+x_contributors:
+  - 'Keedi Kim <keedi.k@gmail.com>'
+  - 'Jeen Lee <jeen@perl.kr>'
+  - 'Jeen Lee <aiatejin@gmail.com>'

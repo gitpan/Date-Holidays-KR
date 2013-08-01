@@ -1,4 +1,7 @@
 use strict;
+
+BEGIN { $ENV{TZ} = 'Asia/Seoul' } 
+
 use Date::Holidays::KR;
 use Test::More;
 
